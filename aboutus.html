@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Main Content -->
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="win.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Main Content -->
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Zen Time</h1>
+      </div>
+      <div class="another-div">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">Blog</a></li>
+          <li><a href="product.html">product</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" class="search" id="searchbar" placeholder="search">
+          <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+<div class="body">
+    <!-- maincontent -->
+    <h1 class="section-title">About Us</h1>
+    <div class="company-info-container">
+        
+        <!-- Company Info Card -->
+        <div class="info-card">
+            <h2>Company Information</h2>
+            <ul>
+                <li><strong>Name:</strong> ZEN TIME</li>
+                <li><strong>Established:</strong> November 16, 2024</li>
+                <li><strong>Location:</strong> Dharan 18</li>
+                <li><strong>Description:</strong> Our company specializes in selling excellent quality watches at reasonable prices. 
+                    We are one of Nepal’s top watch retailers with international partnerships. 
+                    Our products are crafted in our own business unit using locally sourced materials, supporting Nepali farmers. 
+                    Our main focus is selling watches to young teenagers and adults.</li>
+                <li><strong>Products:</strong> Rolex, Casio, Patek Philippe, Gurkha, Apple</li>
+            </ul>
+        </div>
+    
+        <!-- Mission & Vision Card -->
+        <div class="info-card">
+            <h2>Mission and Vision</h2>
+            <ul>
+                <li><strong>Mission:</strong> To offer a vast selection of high-quality, tasteful watches at affordable prices. 
+                    We aim to provide a seamless online shopping experience with excellent customer service, authentication, and craftsmanship.</li>
+                <li><strong>Vision:</strong> To become the leading online platform for elegant and innovative watch designs, 
+                    offering customers a sophisticated and luxurious shopping experience. 
+                    Our goal is to cultivate a growing community passionate about horology and watch trends.</li>
+            </ul>
+        </div>
+    
+    </div>
+    
+            <!-- making portfolio section -->
+             <h1>Meet Our Team Members</h1>
+            <section id="portfolios">
+              <figure><a href="./nirjara/neerjara.html"><img src="./nirjara/nirjara.jpg" alt=""></a><h1>Nirjara Chaudhary</h1></figure>
+              <figure><a href="./anmol/anmol.html"><img src="./anmol/anmol.jpg" alt=""></a><h1>Anmol Niraula</h1></figure>
+              <figure><a href="./dilasha/dilasha.html"><img src="./dilasha/dilasha.jpg" alt=""></a><h1>Dilasha Thapa</h1></figure>
+              <figure><a href="./portfolio/villan.html"><img src="./portfolio/pic.jpg" alt=""></a><h1>Sumit Shrestha</h1></figure>
+              <figure><a href="./neema/neema.html"><img src="./neema/neema.jpg" alt=""></a><h1>Neema Gurung</h1></figure>
+            </section>
+            <!-- creating feedback form -->
+<h1> Feedback form </h1>
+<!-- making div for form -->
+<div id="forForm">
+    <form class="form" id="input-form" onsubmit="submitform(event)">
+        <!-- giving name and inpt to each field -->
+        <label for="">Name</label>
+        <br />
+        <input type="text" name="" id="name-field" />
+        <br />
+        <label for="">Email</label>
+        <br />
+        <input type="email" name="" id="email-field" />
+        <br />
+        <label for="">Subject</label>
+        <br/>
+        <input type="text" name=""  id="subject-field" />
+        <br/>
+        <label for="">Feedback</label>
+        <br />
+        <textarea name="" id="feedback-field" ></textarea>
+        <br />
+        <input type="submit" class="submit-button" value="Submit" />
+    </form>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Footer Navigation Links -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    
+    
+    <div class="footer-info">
+      <p>&copy; 2025 Zen Time watch store</p>
+      <p>Designed by Zen Time Team</p>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+  <script src="https://kit.fontawesome.com/9e0d0d07b4.js" crossorigin="anonymous"></script>
+                
+   <script src="about.js"></script>
+            </body>
+            </html>

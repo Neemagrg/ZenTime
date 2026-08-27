@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--Video Background-->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+          <source src="win.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--Main Content-->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+              <h1>Zen Time</h1>
+            </div>
+            <div class="another-div">
+              <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">Blog </a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a></li>
+              </ul>
+                <div class="search-bar">
+                    <input type="text" class="search" id="search-input" placeholder="Search">
+                    <button type="submit" class="search" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-text">
+            <h2>Explore our luxurious watch collection</h2>
+          </div>
+    </header>
+     
+    <!--Sorting Section-->
+        <div class="small-container">
+            <h2>All Products</h2>
+            <h3>Sorted By:</h3>
+            <select id="sort-options">
+                <option value="Default">Price:Default</option>
+                <option value="high-to-low">Price: High to Low</option>
+                <option value="low-to-high">Price: Low to High</option>
+            </select>
+        </div>
+
+    <!--Product Section-->
+        <div class="container" id="product-container">
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product" data-price="23500"  data-name="rolex">
+                    <img src="/rolex Black-Diamond-Jubilee.jpg" alt="Product 1">
+                    <div class="product-details">
+                        <h2>Rolex Datejust Jubilee</h2>
+                        <p>Black Dial Steel and Yellow Gold Watch<br> Model#: 126333</p>
+                        <div class="price">$23,500.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product" data-price="73900" data-name="rolex">
+                    <img src="/rolex green dial.jpg" alt="Product 2">
+                    <div class="product-details">
+                        <h2>Rolex Cosmograph Daytona</h2>
+                        <p>Green Dial Yellow Gold Watch<br> Model#: 1165508</p>
+                        <div class="price">$73,900.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 3 -->
+                <div class="product" data-price="169000" data-name="patek">
+                    <img src="/patrick.watch.PNG" alt="Product 3">
+                    <div class="product-details">
+                        <h2>Patek Philippe Nautilus</h2>
+                        <p>Black Dial Rose Gold Watch<br> Model#: 5980/1R-001</p>
+                        <div class="price">$169,000.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product" data-price="166000" data-name="patek">
+                    <img src="/patrick.jpg" alt="Product 1">
+                    <div class="product-details">
+                        <h2>Patek Philippe Nautilus</h2>
+                        <p>Blue Dial White Gold Watch<br> Model#: 5811/1G-001</p>
+                        <div class="price">$166,000.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 5 -->
+                <div class="product" data-price="8000" data-name="casio">
+                    <img src="/casio.mrg.png" alt="Product 5">
+                    <div class="product-details">
+                        <h2>Casio MR-G KABUTO Helmet</h2>
+                        <p>Black Dial Solid And Titanium Watch<br> Model#: B2000SH</p>
+                        <div class="price">$8,000.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product" data-price="300" data-name="casio">
+                    <img src="/casio.o.JPG" alt="Product 6">
+                    <div class="product-details">
+                        <h2>Casio GM-2110D</h2>
+                        <p>Navy Dial Resin / Stainless steel Watch<br> Model#: 2110D-2B</p>
+                        <div class="price">$300.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 7 -->
+                <div class="product" data-price="149" data-name="gurkha">
+                    <img src="/gurkha.jpg" alt="Product 7">
+                    <div class="product-details">
+                        <h2>Gurkha Urban Chrono Flare</h2>
+                        <p>Red Dial Genuine Leather Watch<br> Model#: 14900</p>
+                        <div class="price">$149.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product" data-price="159" data-name="gurkha">
+                    <img src="/gurkha.watch.jpg" alt="Product 8">
+                    <div class="product-details">
+                        <h2>Gurkha Nato Bronze Brown</h2>
+                        <p>Brown Dail Pure Leather Watch<br> Model#: 15900</p>
+                        <div class="price">$159.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 9 -->
+                <div class="product" data-price="10600" data-name="omega">
+                    <img src="/Omega-red (1).jpg" alt="Product 9">
+                    <div class="product-details">
+                        <h2>Omega Red Constellation</h2>
+                        <p>Red Dial Alligator Leather Watch <br> Model#: 10599</p>
+                        <div class="price">$10,600.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product" data-price="6600" data-name="omega">
+                    <img src="/omega.JPG" alt="Product 10">
+                    <div class="product-details">
+                        <h2>Omega Seamaster Aqua Terra</h2>
+                        <p>Blue Dial Stainless Steel Watch <br> Model#: 16600</p>
+                        <div class="price">$6,600.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 11 -->
+                <div class="product" data-price="799" data-name="apple">
+                    <img src="/Apple-Watch-Ultra.jpg" alt="Product 11">
+                    <div class="product-details">
+                        <h2>Apple Watch Ultra 2</h2>
+                        <p>S9 64GB Silver Titanium Watch<br> Model#: U2s9</p>
+                        <div class="price">$799.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product" data-price="429" data-name="apple">
+                    <img src="/series_10.jpg" alt="Product 12">
+                    <div class="product-details">
+                        <h2>Apple Watch Series 10</h2>
+                        <p>S10 64GB Jet-Black Aluminium Watch<br> Model# Sr10</p>
+                        <div class="price">$429.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 13 -->
+                <div class="product" data-price="10500" data-name="cartier">
+                    <img src="/c.PNG" alt="Product 13">
+                    <div class="product-details">
+                        <h2>Cartier Tank Louis Yellow Gold</h2>
+                        <p>Silver Dial Brown Leather Watch <br> Model#: W1529756</p>
+                        <div class="price">$10,500.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product" data-price="3850" data-name="cartier">
+                    <img src="/cartier.jpg" alt="Product 14">
+                    <div class="product-details">
+                        <h2>Cartier Tank Must</h2>
+                        <p>Silver Dial Stainless Steel Watch <br> Model#: WSTA0052</p>
+                        <div class="price">$3,850.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <!-- Product 15 -->
+                <div class="product" data-price="75" data-name="casio">
+                    <img src="/cas.JPG" alt="Product 15">
+                    <div class="product-details">
+                        <h2>Casio Analog-Digital Watch</h2>
+                        <p>White Dial Silver Stainless Steel Watch <br> Model#: AQ-230</p>
+                        <div class="price">$75.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star-half-alt"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="product" data-price="90" data-name="casio">
+                    <img src="/cd.PNG" alt="Product 16">
+                    <div class="product-details">
+                        <h2>Casio Classic Digital Watch</h2>
+                        <p>Gold Dial Gold Stainless Steel Watch <br> Model#: A-158</p>
+                        <div class="price">$90.00</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" >
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                            <label for="star" class="fas fa-star"></label>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Cart Section -->
+    <div class="cart-container" id="cart-container">
+        <div class="close-btn">&times;</div>
+        <h3>My Cart <hr></h3>
+        <div class="cart-items" id="cart-items" >cart is empty</div>
+        <hr>
+        <div class="cart-total" id="cart-total">
+            <strong>Total:</strong> $0.00
+        </div>
+        <button onclick="alert('Proceed to Checkout!')">Checkout</button>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Footer Navigation Links -->
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- Contact Information -->
+          <div class="footer-info">
+            <p>&copy; 2025 Zen Time watch store</p>
+            <p>Designed by Zen Time Team</p>
+          </div>
+          <!-- Social Media Links -->
+          <div class="social-icons">
+            <a href="facebook" target="_blank" class="fab fa-facebook"></a>
+            <a href="instagram" target="_blank" class="fab fa-instagram"></a>
+            <a href="twitter" target="_blank" class="fab fa-twitter"></a>
+          </div>
+        </div>
+    </footer>
+
+    <script src="Product.js"></script>
+</body>
+</html>
